@@ -1,0 +1,21 @@
+// lesson 1
+image = new SimpleImage("51020-poppy.png");
+
+for (pixel: image) {
+ pixel.setRed(pixel.getRed() * 10);
+ pixel.setGreen(pixel.getGreen() * 5);
+ pixel.setBlue(pixel.getBlue() * 20);
+}
+
+print(image);
+
+// lesson 2
+image = new SimpleImage("51020-stop-sky.png");
+
+for (pixel: image) {
+  pixel.setRed(pixel.getRed() * 20);
+  pixel.setGreen(pixel.getGreen() * 10);
+  pixel.setBlue(pixel.getBlue() * 5);
+}
+
+print(image);

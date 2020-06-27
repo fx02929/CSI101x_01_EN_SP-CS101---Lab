@@ -1,0 +1,58 @@
+// lesson 1
+image = new SimpleImage("striped-fish-green.jpg");
+back = new SimpleImage("yosemite.jpg");
+back.setSameSize(image);
+
+for (pixel: image) {
+  avg = (pixel.getRed() + pixel.getGreen() + pixel.getBlue())/3;
+  if (pixel.getGreen() > avg * 1.02) {
+   x = pixel.getX();
+   y = pixel.getY();
+   pixel12 = back.getPixel(x, y);
+   pixel.setRed(pixel12.getRed());
+   pixel.setGreen(pixel12.getGreen());
+   pixel.setBlue(pixel12.getBlue());
+  }
+  
+}
+print(image);
+
+// lesson 2
+image = new SimpleImage("redwood.jpg");
+back = new SimpleImage("pebbles.jpg");
+back.setSameSize(image);
+
+for (pixel: image) {
+  avg = (pixel.getRed() + pixel.getGreen() + pixel.getBlue())/3;
+  if (pixel.getGreen() > avg * 0.91) {
+    x = pixel.getX();
+    y = pixel.getY();
+    pixel12 = back.getPixel(x, y);
+    pixel.setRed(pixel12. getRed());
+    pixel.setGreen(pixel12. getGreen());
+    pixel.setBlue(pixel12. getBlue());
+  }
+  
+}
+
+print(image);
+
+// lesson 3
+image = new SimpleImage("striped-fish-blue.jpg");
+back = new SimpleImage("paris.jpg");
+back.setSameSize(image);
+
+for (pixel: image) {
+  avg = (pixel.getRed() + pixel.getGreen() + pixel.getBlue())/3;
+  if (pixel.getBlue() > avg * 0.5) {
+    x = pixel.getX();
+    y = pixel.getY();
+    pixel12 = back.getPixel(x, y);
+    pixel.setRed(pixel12.getRed());
+    pixel.setGreen(pixel12.getGreen());
+    pixel.setBlue(pixel12.getBlue());
+  }
+  
+}
+
+print(image);

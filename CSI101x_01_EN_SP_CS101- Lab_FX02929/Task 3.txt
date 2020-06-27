@@ -1,0 +1,21 @@
+// lesson 1
+image = new SimpleImage("x.png");
+image.setZoom(20);
+pixel = image.getPixel(0, 0);
+pixel.setBlue(255);
+print(image);
+
+// lesson 2
+image = new SimpleImage("x.png");
+image.setZoom(20);
+pixel = image.getPixel(0, 0);
+pixel.setRed(255);
+pixel.setBlue(255);
+print(image);
+
+// lesson 3
+image = new SimpleImage("x.png");
+image.setZoom(20);
+pixel = image.getPixel(1, 0);
+pixel.setRed(255);
+print(image);

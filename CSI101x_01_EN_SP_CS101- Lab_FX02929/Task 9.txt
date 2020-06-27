@@ -1,0 +1,43 @@
+// lesson 1
+image = new SimpleImage("fence-ivy.jpg");
+
+for (pixel: image) {
+  avg = (pixel.getRed() + pixel.getGreen() + pixel.getBlue()) / 3;
+  
+  if (pixel.getGreen() > avg * 1) {
+   pixel.setRed(avg);
+   pixel.setGreen(0);
+   pixel.setBlue(avg);
+  }
+}
+print(image);
+
+// lesson 2
+image = new SimpleImage("stop.jpg");
+
+for (pixel: image) {
+ avg = (pixel.getRed() + pixel.getGreen() + pixel.getBlue()) / 3;
+ 
+ if (pixel.getBlue() > avg * 1.2) {
+  pixel.setRed(20);
+  pixel.setGreen(20);
+  pixel.setBlue(20);
+ }
+ 
+}
+
+print(image);
+
+// lesson 3
+image = new SimpleImage("curb.jpg");
+
+for (pixel: image) {
+  avg = (pixel.getRed() + pixel.getGreen() +   pixel.getBlue())/3;
+  if (pixel.getRed() > avg*1.2) {
+   pixel.setBlue(avg * 1.2);
+   pixel.setRed(avg / 2);
+   pixel.setGreen(avg / 2);
+  }
+}
+
+print(image);

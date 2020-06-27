@@ -1,0 +1,19 @@
+// lesson 1
+image = new SimpleImage("flowers.jpg");
+
+for (pixel: image) {
+ pixel.setGreen(0);
+}
+
+print(image);
+
+// lesson 2
+image = new SimpleImage("flowers.jpg");
+
+for (pixel: image) {
+  pixel.setRed(255);
+  pixel.setGreen(0);
+  pixel.setBlue(0);
+}
+
+print(image);
